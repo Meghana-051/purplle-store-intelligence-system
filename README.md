@@ -1,8 +1,16 @@
 # Purplle Store Intelligence System
 
-![Store Intelligence Dashboard](docs/store-intelligence-dashboard.png)
-
 A store analytics platform for real-time video processing, customer tracking, and performance monitoring using YOLOv8, FastAPI, Streamlit, and custom tracking logic.
+
+## Results
+
+![Store Intelligence Dashboard](docs/results-1.png)
+
+![Store Performance Analytics](docs/results-2.png)
+
+![System Specifications](docs/results-3.png)
+
+![Real-time Video Processor](docs/results-4.png)
 
 ## Project structure
 
@@ -37,5 +45,4 @@ python app.py
 
 ## Notes
 
-- Add the dashboard screenshot at `docs/store-intelligence-dashboard.png` to render the image in this README.
 - Ensure your video files are stored in `data/videos/` but not committed to git.
