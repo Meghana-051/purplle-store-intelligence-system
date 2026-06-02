@@ -1,17 +1,27 @@
 # Purplle Store Intelligence System
 
-End-to-end video analytics and store intelligence platform built with YOLOv8, FastAPI, Streamlit, and tracking optimization.
+![Store Intelligence Dashboard](docs/store-intelligence-dashboard.png)
+
+A store analytics platform for real-time video processing, customer tracking, and performance monitoring using YOLOv8, FastAPI, Streamlit, and custom tracking logic.
 
 ## Project structure
 
-- `api/server.py` - REST API server
-- `pipeline/` - detection, tracking, and streaming scripts
-- `schema/events_schema.py` - event schema definitions
 - `app.py` - application entrypoint
-- `requirements.txt` - Python dependencies
-- `data/videos/` - source video assets (ignored)
-- `output/` - generated outputs (ignored)
-- `yolov8n.pt` - model weights (ignored)
+- `api/server.py` - FastAPI REST API server
+- `pipeline/` - video detection, tracking, heatmap, and streaming scripts
+- `schema/events_schema.py` - event schema and payload definitions
+- `requirements.txt` - Python dependency manifest
+- `data/videos/` - source video assets (ignored by git)
+- `output/` - generated outputs and logs (ignored by git)
+- `yolov8n.pt` - model weights (ignored by git)
+
+## Features
+
+- real-time video object detection and tracking
+- de-duplicated customer footfall analytics
+- heatmap generation for density mapping
+- structured telemetry and event logging
+- REST API and dashboard-ready interface
 
 ## Setup
 
@@ -24,3 +34,8 @@ pip install -r requirements.txt
 ```bash
 python app.py
 ```
+
+## Notes
+
+- Add the dashboard screenshot at `docs/store-intelligence-dashboard.png` to render the image in this README.
+- Ensure your video files are stored in `data/videos/` but not committed to git.
